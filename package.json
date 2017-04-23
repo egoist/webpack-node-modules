@@ -1,0 +1,39 @@
+{
+  "name": "webpack-node-modules",
+  "version": "0.0.0",
+  "description": "Include specified node_modules in webpack loader",
+  "repository": {
+    "url": "egoist/webpack-node-modules",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "element-ready": "^1.0.0",
+    "eslint-config-rem": "^3.0.0",
+    "jest-cli": "^18.1.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "extends": "rem",
+    "esnext": true,
+    "envs": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "read-pkg": "^2.0.0",
+    "semver": "^5.3.0"
+  }
+}
