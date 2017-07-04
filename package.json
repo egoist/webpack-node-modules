@@ -1,6 +1,6 @@
 {
   "name": "webpack-node-modules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Include specified node_modules in webpack loader",
   "repository": {
     "url": "egoist/webpack-node-modules",
