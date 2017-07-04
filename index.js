@@ -1,10 +1,12 @@
 const path = require('path')
-const readPkg = require('read-pkg')
+const readPkg = require('read-pkg-up')
 const semver = require('semver')
 
 module.exports = () => filepath => {
   if (/node_modules/.test(filepath)) {
-    const pkg = readPkg.sync(path.dirname(filepath))
+    const pkg = readPkg.sync({
+      cwd: path.dirname(filepath)
+    }).pkg
     if (pkg) {
       // Include package with `module` field
       // Or using a custom `webpackInclude` field
